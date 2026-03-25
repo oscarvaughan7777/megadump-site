@@ -3,29 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MEGA DUMP :: OFFICIAL MDUMP WEBSITE</title>
+  <title>MEGA DUMP :: OFFICIAL MDUMP INTERNET ZONE</title>
   <meta
     name="description"
-    content="Mega Dump (MDUMP) is an Ethereum meme coin with a loud early-internet look, contract details, buy links, and old-school web energy."
+    content="Mega Dump (MDUMP) official website. A self-aware Ethereum meme coin presented like a chaotic late-90s and early-2000s internet relic."
   />
-  <meta name="theme-color" content="#1d3fff" />
+  <meta name="theme-color" content="#0017a8" />
   <style>
     :root {
-      --bg1: #020b4f;
-      --bg2: #0d1d96;
-      --bg3: #1a4dff;
-      --panel: #d6e4ff;
-      --panel-2: #b8d1ff;
-      --border: #0036cc;
-      --text: #001a66;
-      --text-bright: #ffffff;
-      --link: #0026ff;
-      --visited: #6b00cc;
+      --blue-1: #001b8f;
+      --blue-2: #003cff;
+      --blue-3: #00b7ff;
+      --blue-4: #dfeaff;
+      --blue-5: #a7c4ff;
       --yellow: #fff36d;
-      --red: #ff355e;
-      --green: #00d67a;
-      --cyan: #00d4ff;
-      --orange: #ff9f1c;
+      --orange: #ff9800;
+      --red: #ff245e;
+      --green: #00cf6f;
+      --white: #ffffff;
+      --navy-text: #001f73;
+      --purple-link: #5f00d6;
+      --panel-border: #0032c8;
     }
 
     * {
@@ -33,28 +31,29 @@
     }
 
     html {
-      scroll-behaviour: smooth;
+      scroll-behavior: smooth;
     }
 
     body {
       margin: 0;
       font-family: Verdana, Arial, Helvetica, sans-serif;
-      color: var(--text-bright);
+      color: #fff;
       background:
-        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.18) 0 2px, transparent 3px),
-        radial-gradient(circle at 80% 30%, rgba(255,255,255,0.14) 0 1px, transparent 2px),
-        radial-gradient(circle at 35% 70%, rgba(255,255,255,0.14) 0 2px, transparent 3px),
-        linear-gradient(180deg, var(--bg1) 0%, var(--bg2) 55%, var(--bg3) 100%);
-      background-size: 180px 180px, 220px 220px, 260px 260px, 100% 100%;
+        radial-gradient(circle at 12% 18%, rgba(255,255,255,0.20) 0 1px, transparent 2px),
+        radial-gradient(circle at 78% 24%, rgba(255,255,255,0.15) 0 2px, transparent 3px),
+        radial-gradient(circle at 35% 70%, rgba(255,255,255,0.16) 0 1px, transparent 2px),
+        radial-gradient(circle at 80% 84%, rgba(255,255,255,0.18) 0 2px, transparent 3px),
+        linear-gradient(180deg, #000e5b 0%, #0025ad 44%, #0046ff 100%);
+      background-size: 180px 180px, 260px 260px, 200px 200px, 300px 300px, 100% 100%;
     }
 
     a {
-      color: var(--link);
+      color: #0032ff;
       font-weight: bold;
     }
 
     a:visited {
-      color: var(--visited);
+      color: var(--purple-link);
     }
 
     img {
@@ -63,108 +62,135 @@
     }
 
     .page {
-      width: min(1100px, calc(100% - 16px));
+      width: min(1120px, calc(100% - 14px));
       margin: 0 auto;
       padding: 8px 0 40px;
     }
 
-    .outer-table {
+    .chrome {
       width: 100%;
       border-collapse: collapse;
-      background: rgba(0, 10, 70, 0.35);
-      border: 3px solid #a8c6ff;
-      box-shadow: 0 0 0 4px #0026cc, 0 0 0 8px #ffffff;
+      background: rgba(0, 10, 90, 0.35);
+      border: 3px solid #c8d9ff;
+      box-shadow: 0 0 0 3px #0032c8, 0 0 0 7px #ffffff;
     }
 
-    .outer-table td {
+    .chrome td {
       vertical-align: top;
     }
 
-    .top-banner {
-      background:
-        linear-gradient(90deg, #001a88 0%, #0048ff 30%, #00b7ff 50%, #0048ff 70%, #001a88 100%);
-      border-bottom: 4px solid #fff36d;
-      padding: 10px 12px;
-      text-align: center;
-    }
-
-    .tiny-bar {
+    .welcome-bar {
       background: #fff36d;
-      color: #8a0000;
+      color: #8e1400;
       text-align: center;
       font-weight: bold;
-      padding: 4px 10px;
-      border-bottom: 2px solid #ff8a00;
-      letter-spacing: 0.06em;
-    }
-
-    .site-title {
-      margin: 0;
-      font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
-      font-size: clamp(42px, 9vw, 88px);
-      line-height: 0.95;
-      color: #ffffff;
+      padding: 5px 10px;
+      font-size: 12px;
+      border-bottom: 2px solid #ff9800;
       text-transform: uppercase;
-      text-shadow:
-        0 2px 0 #0026cc,
-        0 4px 0 #001b88,
-        0 6px 0 #00125d,
-        0 0 18px rgba(255, 255, 255, 0.35);
       letter-spacing: 0.08em;
     }
 
-    .subtitle {
+    .masthead {
+      background:
+        linear-gradient(90deg, #00178b 0%, #0047ff 26%, #00d1ff 50%, #0047ff 74%, #00178b 100%);
+      border-bottom: 4px solid #fff36d;
+      text-align: center;
+      padding: 14px 12px 12px;
+      position: relative;
+    }
+
+    .title {
+      margin: 0;
+      font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+      font-size: clamp(42px, 8vw, 94px);
+      line-height: 0.94;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #fff;
+      text-shadow:
+        0 2px 0 #0032c8,
+        0 4px 0 #001b8f,
+        0 6px 0 #00104f,
+        0 0 16px rgba(255,255,255,0.5);
+    }
+
+    .subhead {
       margin: 10px 0 0;
+      color: #fffde0;
       font-size: 13px;
-      color: #fffbd6;
       font-weight: bold;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.15em;
       text-transform: uppercase;
     }
 
-    .left-nav {
-      width: 220px;
-      background:
-        linear-gradient(180deg, #8eb7ff 0%, #dce9ff 100%);
-      border-right: 3px solid #0036cc;
-      color: var(--text);
+    .tag-stamp {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 4px 10px;
+      background: var(--yellow);
+      border: 2px solid var(--orange);
+      color: #8c0d00;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 12px;
+      transform: rotate(-3deg);
     }
 
-    .main-area {
-      background:
-        linear-gradient(180deg, #eaf2ff 0%, #cde0ff 100%);
-      color: var(--text);
+    .marquee-row {
+      background: #001b8f;
+      color: #fff;
+      border-top: 2px solid var(--yellow);
+      border-bottom: 2px solid var(--yellow);
+      padding: 6px 0;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .left-rail,
+    .right-rail {
+      width: 210px;
+      background: linear-gradient(180deg, #a7c4ff 0%, #e8f0ff 100%);
+      color: var(--navy-text);
+    }
+
+    .left-rail {
+      border-right: 3px solid var(--panel-border);
     }
 
     .right-rail {
-      width: 220px;
-      background:
-        linear-gradient(180deg, #8eb7ff 0%, #dce9ff 100%);
-      border-left: 3px solid #0036cc;
-      color: var(--text);
+      border-left: 3px solid var(--panel-border);
     }
 
-    .nav-box,
-    .rail-box,
-    .content-box {
+    .content {
+      background: linear-gradient(180deg, #eef5ff 0%, #d7e7ff 100%);
+      color: var(--navy-text);
+    }
+
+    .box {
       margin: 10px;
-      border: 2px solid #0036cc;
-      background: #f3f8ff;
-      box-shadow: inset 0 0 0 2px #ffffff;
+      border: 2px solid var(--panel-border);
+      background: #f7fbff;
+      box-shadow: inset 0 0 0 2px #fff;
     }
 
-    .nav-head,
-    .rail-head,
-    .content-head {
-      background: linear-gradient(180deg, #0036cc 0%, #001d75 100%);
-      color: #ffffff;
+    .box-head {
+      background: linear-gradient(180deg, #0032c8 0%, #001a73 100%);
+      color: #fff;
+      font-size: 12px;
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 0.08em;
       padding: 8px 10px;
-      font-size: 12px;
-      border-bottom: 2px solid #fff36d;
+      border-bottom: 2px solid var(--yellow);
       text-align: center;
+    }
+
+    .box-body {
+      padding: 12px;
+      color: #072771;
+      font-size: 13px;
+      line-height: 1.7;
     }
 
     .nav-links {
@@ -173,36 +199,47 @@
 
     .nav-button {
       display: block;
-      text-decoration: none;
-      color: #ffffff !important;
-      background: linear-gradient(180deg, #ff4f88 0%, #cf114f 100%);
-      border: 2px outset #ffd3e1;
-      padding: 10px 8px;
       margin-bottom: 10px;
-      text-align: centre;
+      padding: 10px 8px;
+      text-align: center;
+      text-decoration: none;
       text-transform: uppercase;
-      font-size: 12px;
       letter-spacing: 0.08em;
-      box-shadow: 2px 2px 0 #001d75;
+      font-size: 12px;
+      color: #fff !important;
+      border: 2px outset #ffe2eb;
+      background: linear-gradient(180deg, #ff6292 0%, #d71456 100%);
+      box-shadow: 2px 2px 0 #001b8f;
     }
 
     .nav-button:hover {
-      background: linear-gradient(180deg, #ff7aa7 0%, #ff355e 100%);
+      background: linear-gradient(180deg, #ff82aa 0%, #ff2e67 100%);
     }
 
-    .nav-button.alt {
-      background: linear-gradient(180deg, #00c3ff 0%, #005eff 100%);
-      border-color: #d8f4ff;
+    .nav-button.blue {
+      background: linear-gradient(180deg, #00ccff 0%, #005eff 100%);
+      border-color: #dcf7ff;
     }
 
     .nav-button.green {
-      background: linear-gradient(180deg, #00d67a 0%, #009b56 100%);
-      border-color: #d4ffea;
+      background: linear-gradient(180deg, #00d873 0%, #009751 100%);
+      border-color: #dffff0;
     }
 
     .nav-button.orange {
-      background: linear-gradient(180deg, #ffb347 0%, #ff7a00 100%);
-      border-color: #fff0d0;
+      background: linear-gradient(180deg, #ffbe5e 0%, #ff7900 100%);
+      border-color: #fff0cd;
+    }
+
+    .visitor-counter {
+      text-align: center;
+      padding: 10px;
+      font-family: "Courier New", monospace;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(180deg, #001970 0%, #0032c8 100%);
+      border: 2px inset #c6dbff;
+      font-size: 16px;
     }
 
     .blink {
@@ -210,193 +247,197 @@
     }
 
     @keyframes blink {
-      to { visibility: hidden; }
+      to {
+        visibility: hidden;
+      }
     }
 
-    .marquee-wrap {
-      background: #001d75;
-      border-top: 2px solid #fff36d;
-      border-bottom: 2px solid #fff36d;
-      padding: 6px 0;
-      color: #ffffff;
-      font-weight: bold;
-      font-size: 13px;
-    }
-
-    .marquee-wrap marquee {
-      display: block;
-    }
-
-    .hero-grid {
+    .hero-table {
       width: 100%;
       border-collapse: collapse;
     }
 
-    .hero-grid td {
+    .hero-table td {
       padding: 12px;
       vertical-align: top;
     }
 
-    .hero-panel {
-      border: 2px solid #0036cc;
-      background:
-        linear-gradient(180deg, #ffffff 0%, #e9f3ff 100%);
-      box-shadow: inset 0 0 0 2px #ffffff;
+    .panel {
+      border: 2px solid var(--panel-border);
+      background: linear-gradient(180deg, #ffffff 0%, #ecf4ff 100%);
+      box-shadow: inset 0 0 0 2px #fff;
       padding: 14px;
+      height: 100%;
     }
 
     .hero-title {
       margin: 0 0 10px;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(28px, 4vw, 48px);
-      line-height: 1;
+      color: #002cc8;
+      text-shadow: 1px 1px 0 var(--yellow);
       text-transform: uppercase;
-      color: #0026cc;
-      text-shadow: 1px 1px 0 #fff36d;
+      font-size: clamp(28px, 4vw, 50px);
+      line-height: 1;
     }
 
     .lead {
-      margin: 0 0 14px;
-      font-size: 16px;
-      line-height: 1.7;
-      color: #08246b;
+      margin: 0 0 12px;
+      font-size: 17px;
       font-weight: bold;
-    }
-
-    .plain-text {
-      font-size: 14px;
       line-height: 1.7;
-      color: #0d2a78;
+      color: #0a2971;
     }
 
-    .big-button {
+    .copy {
+      font-size: 14px;
+      line-height: 1.75;
+      color: #113280;
+    }
+
+    .action-button {
       display: inline-block;
-      text-decoration: none;
-      color: #ffffff !important;
-      background: linear-gradient(180deg, #ff4f88 0%, #cf114f 100%);
-      border: 3px outset #ffd2df;
-      padding: 12px 18px;
       margin: 6px 8px 6px 0;
+      padding: 12px 18px;
+      text-decoration: none;
       text-transform: uppercase;
       letter-spacing: 0.08em;
       font-size: 13px;
-      box-shadow: 3px 3px 0 #001d75;
-    }
-
-    .big-button.blue {
-      background: linear-gradient(180deg, #00c3ff 0%, #005eff 100%);
-      border-color: #d8f4ff;
-    }
-
-    .big-button.green {
-      background: linear-gradient(180deg, #00d67a 0%, #009b56 100%);
-      border-color: #d4ffea;
-    }
-
-    .stamp {
-      display: inline-block;
-      background: #fff36d;
-      color: #8a0000;
+      color: #fff !important;
+      border: 3px outset #ffe2eb;
+      background: linear-gradient(180deg, #ff6292 0%, #d71456 100%);
+      box-shadow: 3px 3px 0 #001b8f;
+      cursor: pointer;
+      font-family: inherit;
       font-weight: bold;
-      padding: 4px 8px;
-      border: 2px solid #ff8a00;
-      transform: rotate(-3deg);
-      margin-bottom: 10px;
-      text-transform: uppercase;
-      font-size: 12px;
     }
 
-    .coin-box {
-      text-align: center;
-      background:
-        radial-gradient(circle at 50% 45%, #ffffff 0%, #ffe48f 25%, #ffb800 60%, #ff7a00 100%);
-      border: 4px ridge #fff1a6;
-      border-radius: 50%;
-      width: 220px;
-      height: 220px;
+    .action-button.blue {
+      background: linear-gradient(180deg, #00ccff 0%, #005eff 100%);
+      border-color: #dcf7ff;
+    }
+
+    .action-button.green {
+      background: linear-gradient(180deg, #00d873 0%, #009751 100%);
+      border-color: #dffff0;
+    }
+
+    .action-button.orange {
+      background: linear-gradient(180deg, #ffbe5e 0%, #ff7900 100%);
+      border-color: #fff0cd;
+    }
+
+    .coin-frame {
+      width: 230px;
+      height: 230px;
       margin: 0 auto 12px;
       display: grid;
       place-items: center;
-      box-shadow: 0 0 0 4px #0036cc, 0 0 35px rgba(0, 68, 255, 0.35);
+      border-radius: 50%;
+      border: 4px ridge #fff2a6;
+      background: radial-gradient(circle at 50% 40%, #ffffff 0%, #ffe38b 24%, #ffb000 60%, #ff7700 100%);
+      box-shadow: 0 0 0 4px #0032c8, 0 0 30px rgba(0, 78, 255, 0.35);
     }
 
-    .coin-box img {
+    .coin-frame img {
       width: 72%;
       height: 72%;
       object-fit: contain;
       filter: drop-shadow(0 0 10px rgba(255,255,255,0.5));
     }
 
+    .construction {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 4px 8px;
+      background: #fff36d;
+      color: #8e1400;
+      font-size: 12px;
+      font-weight: bold;
+      border: 2px dashed #ff9800;
+      text-transform: uppercase;
+    }
+
+    .divider-stars {
+      text-align: center;
+      color: #ff9800;
+      font-weight: bold;
+      letter-spacing: 0.3em;
+      margin: 10px 0 4px;
+    }
+
     .section {
       margin: 12px;
-      border: 2px solid #0036cc;
-      background: #f8fbff;
-      box-shadow: inset 0 0 0 2px #ffffff;
+      border: 2px solid var(--panel-border);
+      background: #f9fcff;
+      box-shadow: inset 0 0 0 2px #fff;
     }
 
     .section-head {
-      background: linear-gradient(90deg, #0036cc 0%, #0062ff 50%, #0036cc 100%);
-      color: #ffffff;
-      font-weight: bold;
+      background: linear-gradient(90deg, #0032c8 0%, #0065ff 50%, #0032c8 100%);
+      color: #fff;
+      border-bottom: 2px solid var(--yellow);
       padding: 9px 12px;
-      border-bottom: 2px solid #fff36d;
+      font-size: 12px;
+      font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      font-size: 12px;
     }
 
     .section-body {
       padding: 14px;
-      color: #08246b;
+      color: #072771;
     }
 
     .section-body p {
       margin-top: 0;
-      line-height: 1.75;
       font-size: 14px;
+      line-height: 1.75;
+    }
+
+    .grid-2,
+    .grid-3 {
+      display: grid;
+      gap: 12px;
     }
 
     .grid-2 {
-      display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 12px;
     }
 
     .grid-3 {
-      display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 12px;
     }
 
-    .info-card {
-      border: 2px solid #0036cc;
-      background: linear-gradient(180deg, #ffffff 0%, #eaf2ff 100%);
+    .card {
+      border: 2px solid var(--panel-border);
+      background: linear-gradient(180deg, #ffffff 0%, #eef5ff 100%);
       padding: 12px;
-      min-height: 100%;
+      height: 100%;
     }
 
-    .info-card h3 {
+    .card h3 {
       margin: 0 0 8px;
       font-size: 16px;
-      color: #0026cc;
       text-transform: uppercase;
+      color: #002cc8;
     }
 
-    .info-card p,
-    .info-card li {
+    .card p,
+    .card li {
+      margin: 0;
       font-size: 13px;
       line-height: 1.7;
-      color: #0d2a78;
+      color: #113280;
     }
 
-    .contract-strip {
-      background: #fff36d;
-      border: 2px dashed #ff8a00;
+    .contract-box {
+      margin-top: 10px;
       padding: 10px;
-      margin: 10px 0 0;
-      color: #7a1400;
-      font-weight: bold;
+      background: #fff36d;
+      border: 2px dashed #ff9800;
+      color: #7b1600;
       font-size: 13px;
+      font-weight: bold;
       line-height: 1.6;
       word-break: break-all;
     }
@@ -404,50 +445,72 @@
     .mini-table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 8px;
+      margin-top: 6px;
     }
 
     .mini-table th,
     .mini-table td {
-      border: 1px solid #0036cc;
+      border: 1px solid var(--panel-border);
       padding: 8px;
       font-size: 13px;
       text-align: left;
     }
 
     .mini-table th {
-      background: #b9d3ff;
-      color: #001a66;
+      background: #bdd6ff;
+      color: #001f73;
+      width: 180px;
     }
 
     .mini-table td {
-      background: #ffffff;
-      color: #08246b;
+      background: #fff;
+      color: #113280;
     }
 
-    .counter-box {
+    .gif-strip {
       text-align: center;
-      padding: 10px;
-      font-family: "Courier New", monospace;
-      font-size: 15px;
+      padding: 10px 0 4px;
+      font-size: 11px;
+      text-transform: uppercase;
       font-weight: bold;
-      color: #ffffff;
-      background: linear-gradient(180deg, #001d75 0%, #0036cc 100%);
-      border: 2px inset #b9d3ff;
-      margin: 10px;
+      color: #8e1400;
     }
 
-    .footer-bar {
+    .fake-gifs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px;
+      margin-top: 6px;
+    }
+
+    .gif-pill {
+      padding: 6px 10px;
+      border: 2px solid #ff9800;
+      background: #fff7bf;
+      color: #8e1400;
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: uppercase;
+      animation: pulse 0.8s infinite alternate;
+    }
+
+    @keyframes pulse {
+      from {
+        transform: translateY(0);
+      }
+      to {
+        transform: translateY(-2px);
+      }
+    }
+
+    .footer {
       text-align: center;
-      background: #001d75;
-      color: #ffffff;
+      background: #001b8f;
+      border-top: 3px solid var(--yellow);
+      color: #fff;
       padding: 12px;
       font-size: 12px;
-      border-top: 3px solid #fff36d;
-    }
-
-    .center {
-      text-align: center;
     }
 
     .small {
@@ -455,33 +518,28 @@
     }
 
     .warning {
-      color: #9f1400;
+      color: #961300;
       font-weight: bold;
     }
 
-    .starline {
+    .center {
       text-align: center;
-      color: #fff36d;
-      font-weight: bold;
-      letter-spacing: 0.25em;
-      margin: 8px 0;
     }
 
-    @media (max-width: 960px) {
-      .left-nav,
+    @media (max-width: 980px) {
+      .left-rail,
       .right-rail {
         width: auto;
         display: block;
       }
 
-      .layout-stack,
-      .hero-grid,
+      .hero-table,
       .grid-2,
       .grid-3 {
         display: block;
       }
 
-      .hero-grid td,
+      .hero-table td,
       .grid-2 > *,
       .grid-3 > * {
         display: block;
@@ -489,7 +547,7 @@
         margin-bottom: 12px;
       }
 
-      .coin-box {
+      .coin-frame {
         width: 180px;
         height: 180px;
       }
@@ -498,103 +556,125 @@
 </head>
 <body>
   <div class="page">
-    <table class="outer-table" role="presentation">
+    <table class="chrome" role="presentation">
       <tr>
-        <td colspan="3" class="tiny-bar">
-          ★★★ WELCOME TO THE OFFICIAL MEGA DUMP WEBSITE ★★★ BEST VIEWED WITH MAXIMUM INTERNET BRAIN DAMAGE ★★★
+        <td colspan="3" class="welcome-bar">
+          ★★★ Welcome to the official Mega Dump website ★★★ Best viewed with peak internet brain damage ★★★
         </td>
       </tr>
 
       <tr>
-        <td colspan="3" class="top-banner">
-          <div class="stamp blink">Live on Ethereum</div>
-          <h1 class="site-title">MEGA DUMP</h1>
-          <div class="subtitle">MDUMP :: SELF-AWARE MEME COIN :: INTERNET CULTURE ARTEFACT :: 24/7 DUMP ENERGY</div>
+        <td colspan="3" class="masthead">
+          <div class="tag-stamp blink">Now live on Ethereum</div>
+          <h1 class="title">Mega Dump</h1>
+          <div class="subhead">MDUMP :: self-aware meme coin :: internet culture debris :: loud by design</div>
         </td>
       </tr>
 
       <tr>
-        <td colspan="3" class="marquee-wrap">
-          <marquee behaviour="scroll" direction="left" scrollamount="8">
-            MEGA DUMP DOES NOT PRETEND TO BE THE FUTURE OF FINANCE • IT IS A MEME COIN • CONTRACT VISIBLE • BUY PATH SIMPLE • VIBE EXTREMELY 1999 • NOTHING HERE IS FINANCIAL ADVICE •
+        <td colspan="3" class="marquee-row">
+          <marquee behavior="scroll" direction="left" scrollamount="8">
+            MEGA DUMP DOES NOT PRETEND TO BE THE FUTURE OF FINANCE • IT IS A MEME COIN • THE CONTRACT IS VISIBLE • THE BUY PATH IS SIMPLE • THIS WEBSITE IS DELIBERATELY RIDICULOUS • NOTHING HERE IS FINANCIAL ADVICE •
           </marquee>
         </td>
       </tr>
 
-      <tr class="layout-stack">
-        <td class="left-nav">
-          <div class="nav-box">
-            <div class="nav-head">Jam Central</div>
+      <tr>
+        <td class="left-rail">
+          <div class="box">
+            <div class="box-head">Navigation Zone</div>
             <div class="nav-links">
               <a class="nav-button" href="#about">About MDUMP</a>
-              <a class="nav-button alt" href="#token">Token Data</a>
+              <a class="nav-button blue" href="#token">Token Data</a>
               <a class="nav-button green" href="#buy">How To Buy</a>
-              <a class="nav-button orange" href="#links">Important Links</a>
+              <a class="nav-button orange" href="#extras">Bonus Garbage</a>
               <a class="nav-button" href="#faq">FAQ</a>
-              <a class="nav-button alt" href="#contact">Contact</a>
+              <a class="nav-button blue" href="#contact">Contact</a>
             </div>
           </div>
 
-          <div class="rail-box">
-            <div class="rail-head">Visitor Counter</div>
-            <div class="counter-box">000420069</div>
+          <div class="box">
+            <div class="box-head">Visitor Counter</div>
+            <div class="box-body">
+              <div class="visitor-counter">000420069</div>
+            </div>
           </div>
 
-          <div class="rail-box">
-            <div class="rail-head">Status</div>
-            <div class="section-body center small">
-              <p><b>NETWORK:</b> Ethereum</p>
-              <p><b>COIN:</b> MDUMP</p>
-              <p><b>MODE:</b> <span class="blink">LIVE</span></p>
+          <div class="box">
+            <div class="box-head">System Status</div>
+            <div class="box-body center small">
+              <p><b>Network:</b> Ethereum</p>
+              <p><b>Token:</b> MDUMP</p>
+              <p><b>Status:</b> <span class="blink">LIVE</span></p>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="box-head">Internet Awards</div>
+            <div class="box-body center small">
+              <p>🏆 Best Bad Decision Aesthetic</p>
+              <p>🏆 Loudest Coin Homepage</p>
+              <p>🏆 1999 Energy Restored</p>
             </div>
           </div>
         </td>
 
-        <td class="main-area">
+        <td class="content">
           <div class="section">
             <div class="section-head">Mega Dump Main Screen</div>
             <div class="section-body">
-              <table class="hero-grid" role="presentation">
+              <table class="hero-table" role="presentation">
                 <tr>
                   <td width="64%">
-                    <div class="hero-panel">
-                      <div class="stamp">Official Home Page</div>
-                      <h2 class="hero-title">A MEME COIN FOR PEOPLE WHO ALREADY GET THE JOKE</h2>
+                    <div class="panel">
+                      <div class="tag-stamp">Official Home Page</div>
+                      <h2 class="hero-title">A Meme Coin For People Who Already Get The Joke</h2>
                       <p class="lead">
-                        Mega Dump is an Ethereum meme coin dressed like a late-90s web fever dream.
+                        Mega Dump is an Ethereum meme coin wrapped in full late-90s and early-2000s internet chaos.
                       </p>
-                      <p class="plain-text">
-                        It does not claim to fix civilisation. It does not pretend to be deep technology in disguise.
-                        It is a self-aware internet coin with a clearer identity, visible contract details, and a simpler way
-                        for people to find the actual information they need.
+                      <p class="copy">
+                        Your uploaded site currently presents MDUMP as a sleek modern crypto landing page with clean sections,
+                        contract display, buy buttons, and footer links. This version keeps that core information but throws the modern look in the bin. :contentReference[oaicite:2]{index=2} :contentReference[oaicite:3]{index=3}
                       </p>
-                      <p class="plain-text">
-                        In other words: less fake seriousness, more deliberate chaos.
+                      <p class="copy">
+                        It does not pretend to be profound. It does not posture as a serious civilisation-scale protocol.
+                        It is a self-aware internet coin with visible contract details, a clear buy path, and a site that looks like it was built in a sugar rush.
                       </p>
 
                       <div style="margin-top:14px;">
-                        <a class="big-button" id="buyHeroLink" href="https://app.uniswap.org/" target="_blank" rel="noreferrer">Buy On Uniswap</a>
-                        <button class="big-button blue" type="button" data-copy-contract>Copy Contract</button>
-                        <a class="big-button green" href="#token">View Token Data</a>
+                        <a class="action-button" id="buyHeroLink" href="https://app.uniswap.org/" target="_blank" rel="noreferrer">Buy On Uniswap</a>
+                        <button class="action-button blue" type="button" data-copy-contract>Copy Contract</button>
+                        <a class="action-button green" href="#token">View Token Data</a>
+                        <a class="action-button orange" href="#extras">More Weird Stuff</a>
                       </div>
 
-                      <div class="contract-strip" data-contract-text>
+                      <div class="contract-box" data-contract-text>
                         CONTRACT: 0x37d8f7b966F2a869455A90c9401ac65Aef44Db59
+                      </div>
+
+                      <div class="gif-strip">Animated internet quality markers</div>
+                      <div class="fake-gifs">
+                        <span class="gif-pill">Under Construction</span>
+                        <span class="gif-pill">Hot Site</span>
+                        <span class="gif-pill">Cool Link</span>
+                        <span class="gif-pill">Web Rated</span>
+                        <span class="gif-pill">100% Dump</span>
                       </div>
                     </div>
                   </td>
 
                   <td width="36%">
-                    <div class="hero-panel center">
-                      <div class="coin-box">
+                    <div class="panel center">
+                      <div class="coin-frame">
                         <img src="logo.png" alt="Mega Dump logo" />
                       </div>
                       <p class="small"><b>MDUMP</b> is live on Ethereum.</p>
-                      <p class="small warning">THIS WEBSITE IS DELIBERATELY LOUD.</p>
-                      <div class="starline">★ ★ ★ ★ ★</div>
+                      <p class="small warning">This website is intentionally ridiculous.</p>
+                      <div class="divider-stars">★ ★ ★ ★ ★</div>
                       <p class="small">
-                        Best enjoyed with poor impulse control and an understanding that meme coins are meme coins.
+                        If modern crypto sites all look like AI-generated startup sludge, this does the opposite.
                       </p>
+                      <div class="construction">Page under constant fake construction</div>
                     </div>
                   </td>
                 </tr>
@@ -606,18 +686,18 @@
             <div class="section-head">About Mega Dump</div>
             <div class="section-body">
               <div class="grid-2">
-                <div class="info-card">
+                <div class="card">
                   <h3>What It Is</h3>
                   <p>
-                    Mega Dump is a self-aware Ethereum token built around the basic truth that crypto is already full of accidental parody.
-                    Rather than dressing that up as fake grandeur, MDUMP leans into it.
+                    Mega Dump is a self-aware Ethereum token built around the fact that crypto is already drowning in accidental parody.
+                    MDUMP does not cover that up. It uses it.
                   </p>
                 </div>
-                <div class="info-card">
+                <div class="card">
                   <h3>What It Is Not</h3>
                   <p>
-                    It is not a miracle protocol. It is not a fake corporate whitepaper in disguise. It is not pretending
-                    to be something solemn and world-changing because that usually looks stupid.
+                    It is not fake institutional language. It is not solemn mythology. It is not pretending to be deeper than it is,
+                    because that usually looks embarrassing.
                   </p>
                 </div>
               </div>
@@ -651,7 +731,7 @@
               </table>
 
               <div style="margin-top:12px;">
-                <button class="big-button" type="button" data-copy-contract>Copy Contract</button>
+                <button class="action-button" type="button" data-copy-contract>Copy Contract</button>
               </div>
             </div>
           </div>
@@ -660,27 +740,27 @@
             <div class="section-head">How To Buy MDUMP</div>
             <div class="section-body">
               <div class="grid-2">
-                <div class="info-card">
+                <div class="card">
                   <h3>Step 1</h3>
                   <p>Put ETH into your wallet. MetaMask or another Ethereum wallet is fine.</p>
                 </div>
-                <div class="info-card">
+                <div class="card">
                   <h3>Step 2</h3>
                   <p>Open Uniswap and connect your wallet.</p>
                 </div>
-                <div class="info-card">
+                <div class="card">
                   <h3>Step 3</h3>
                   <p>Paste the official MDUMP contract shown on this site so you select the correct token.</p>
                 </div>
-                <div class="info-card">
+                <div class="card">
                   <h3>Step 4</h3>
                   <p>Confirm the swap and accept that you are now participating in internet nonsense.</p>
                 </div>
               </div>
 
               <div style="margin-top:12px;">
-                <a class="big-button green" id="buySectionLink" href="https://app.uniswap.org/" target="_blank" rel="noreferrer">Go To Uniswap</a>
-                <button class="big-button blue" type="button" data-copy-contract>Copy Contract Again</button>
+                <a class="action-button green" id="buySectionLink" href="https://app.uniswap.org/" target="_blank" rel="noreferrer">Go To Uniswap</a>
+                <button class="action-button blue" type="button" data-copy-contract>Copy Contract Again</button>
               </div>
             </div>
           </div>
@@ -689,17 +769,40 @@
             <div class="section-head">Why This Exists</div>
             <div class="section-body">
               <div class="grid-3">
-                <div class="info-card">
+                <div class="card">
                   <h3>Self-Aware</h3>
-                  <p>It understands the category and does not hide behind fake mythology.</p>
+                  <p>It understands the category and does not hide behind fake grandeur.</p>
                 </div>
-                <div class="info-card">
+                <div class="card">
                   <h3>Clear</h3>
-                  <p>The contract and buy route are easy to find instead of buried under vague nonsense.</p>
+                  <p>The contract and buy route are easy to find instead of buried in vague rubbish.</p>
                 </div>
-                <div class="info-card">
+                <div class="card">
                   <h3>Ridiculous On Purpose</h3>
-                  <p>The website looks like 1999 had a sugar crash and built a coin page. That is intentional.</p>
+                  <p>The site looks like 1999 had a caffeine overdose and built a meme coin page. That is deliberate.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="extras" class="section">
+            <div class="section-head">Bonus Garbage Zone</div>
+            <div class="section-body">
+              <div class="grid-3">
+                <div class="card center">
+                  <h3>Mission Control</h3>
+                  <p>Future page idea for charts, fake telemetry, and dramatic nonsense.</p>
+                  <div class="construction">Coming Eventually</div>
+                </div>
+                <div class="card center">
+                  <h3>Hall Of Shame</h3>
+                  <p>Future page idea for memes, community screenshots, and cursed internet relics.</p>
+                  <div class="construction">Not Built Yet</div>
+                </div>
+                <div class="card center">
+                  <h3>Downloads</h3>
+                  <p>Future page idea for wallpapers, buttons, banners, and fake desktop junk.</p>
+                  <div class="construction">Still Broken</div>
                 </div>
               </div>
             </div>
@@ -708,66 +811,76 @@
           <div id="faq" class="section">
             <div class="section-head">Frequently Asked Questions</div>
             <div class="section-body">
-              <div class="info-card">
+              <div class="card">
                 <h3>Is this financial advice?</h3>
                 <p>No.</p>
-
+                <br />
                 <h3>Is this a meme coin?</h3>
-                <p>Yes. Very obviously.</p>
-
+                <p>Yes. Obviously.</p>
+                <br />
                 <h3>Why does the site look like this?</h3>
-                <p>Because clean modern crypto sites all blur together and most of them look fake. This at least has a point of view.</p>
-
-                <h3>Can you add more ridiculous pages later?</h3>
-                <p>Yes. You could easily expand this into fake “downloads”, “gallery”, “mission control”, “dump tracker”, or “hall of shame” pages.</p>
+                <p>Because most crypto sites look interchangeable and fake. This one at least has a backbone.</p>
+                <br />
+                <h3>Can this be split into separate pages later?</h3>
+                <p>Yes. You can build out fake internal pages like mission-control.html, dump-zone.html, downloads.html, and hall-of-shame.html very easily from this style.</p>
               </div>
             </div>
           </div>
         </td>
 
         <td class="right-rail">
-          <div class="rail-box" id="links">
-            <div class="rail-head">Important Links</div>
+          <div class="box">
+            <div class="box-head">Important Links</div>
             <div class="nav-links">
-              <a class="nav-button alt" id="xLink" href="#" target="_blank" rel="noreferrer">X / Twitter</a>
+              <a class="nav-button blue" id="xLink" href="#" target="_blank" rel="noreferrer">X / Twitter</a>
               <a class="nav-button" id="telegramLink" href="#" target="_blank" rel="noreferrer">Telegram</a>
               <a class="nav-button green" id="dexscreenerLink" href="#" target="_blank" rel="noreferrer">Dexscreener</a>
               <a class="nav-button orange" id="dextoolsLink" href="#" target="_blank" rel="noreferrer">Dextools</a>
             </div>
           </div>
 
-          <div class="rail-box">
-            <div class="rail-head">Disclaimer</div>
-            <div class="section-body small">
+          <div class="box">
+            <div class="box-head">Disclaimer</div>
+            <div class="box-body small">
               <p class="warning">
-                MDUMP is a meme coin. Nothing on this website is a promise, guarantee, or sensible life decision.
+                MDUMP is a meme coin. Nothing on this website is a guarantee, promise, or sensible life decision.
               </p>
             </div>
           </div>
 
-          <div class="rail-box" id="contact">
-            <div class="rail-head">Contact</div>
-            <div class="section-body small">
+          <div id="contact" class="box">
+            <div class="box-head">Contact</div>
+            <div class="box-body small">
               <p><b>Email:</b></p>
-              <p>
-                <a href="mailto:contact.megadump@gmail.com">contact.megadump@gmail.com</a>
-              </p>
+              <p><a href="mailto:contact.megadump@gmail.com">contact.megadump@gmail.com</a></p>
             </div>
           </div>
 
-          <div class="rail-box">
-            <div class="rail-head">Official Seal</div>
-            <div class="section-body center">
-              <div class="stamp" style="transform:none;">Mega Dump Approved</div>
-              <p class="small">Certified internet foolishness.</p>
+          <div class="box">
+            <div class="box-head">Official Seal</div>
+            <div class="box-body center small">
+              <div class="tag-stamp" style="transform:none;">Mega Dump Approved</div>
+              <p>Certified internet foolishness.</p>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="box-head">Old Web Checklist</div>
+            <div class="box-body small">
+              <p>✔ Bright gradients</p>
+              <p>✔ Table layout</p>
+              <p>✔ Marquee</p>
+              <p>✔ Blinking text</p>
+              <p>✔ Fake GIF buttons</p>
+              <p>✔ No restraint</p>
             </div>
           </div>
         </td>
       </tr>
 
       <tr>
-        <td colspan="3" class="footer-bar">
-          © MEGA DUMP / MDUMP • EARTH INTERNET DIVISION • ALL CONTENT IS PART OF THE BIT •
+        <td colspan="3" class="footer">
+          © Mega Dump / MDUMP • Earth Internet Division • All content is part of the bit •
           <span data-contract-text>0x37d8f7b966F2a869455A90c9401ac65Aef44Db59</span>
         </td>
       </tr>
