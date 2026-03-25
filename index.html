@@ -1,182 +1,365 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mega Dump (MDUMP)</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mega Dump (MDUMP) is a self-aware Ethereum meme coin with premium presentation, dark humor, and a contract you can actually find.">
+  <meta name="theme-color" content="#0b0b0b">
+  <title>Mega Dump | MDUMP</title>
   <link rel="icon" type="image/png" href="favicon.png">
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f0f0f;
-      color: #ffffff;
-      text-align: center;
-    }
-
-    .container {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 48px 20px 64px;
-    }
-
-    .logo {
-      width: 140px;
-      height: auto;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 52px;
-      letter-spacing: 2px;
-    }
-
-    .tagline {
-      margin: 18px auto 0;
-      max-width: 620px;
-      font-size: 20px;
-      line-height: 1.5;
-      color: #f4f4f4;
-    }
-
-    .cta {
-      display: inline-block;
-      margin-top: 22px;
-      padding: 12px 26px;
-      background: #f5c542;
-      color: #111111;
-      border-radius: 8px;
-      font-weight: 700;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-
-    .box {
-      margin: 32px 0;
-      padding: 24px;
-      background: #1a1a1a;
-      border: 1px solid #252525;
-      border-radius: 12px;
-      text-align: left;
-    }
-
-    .box h2 {
-      margin-top: 0;
-      margin-bottom: 14px;
-      font-size: 24px;
-      color: #f5c542;
-    }
-
-    .box p {
-      margin: 10px 0;
-      line-height: 1.6;
-      color: #e8e8e8;
-    }
-
-    .contract {
-      word-break: break-all;
-      font-size: 14px;
-      color: #cccccc;
-    }
-
-    .steps {
-      padding-left: 20px;
-      margin: 12px 0 0;
-      color: #e8e8e8;
-    }
-
-    .steps li {
-      margin-bottom: 8px;
-      line-height: 1.5;
-    }
-
-    .footer-note {
-      margin-top: 28px;
-      font-size: 13px;
-      color: #8f8f8f;
-    }
-
-    @media (max-width: 640px) {
-      h1 {
-        font-size: 40px;
+  <meta property="og:title" content="Mega Dump | MDUMP">
+  <meta property="og:description" content="We know we're shit. You know you're shit. Let's be shit together.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="logo.png">
+  <script>
+    window.tailwind = window.tailwind || {};
+    window.tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            coal: "#050505",
+            ink: "#0f0f10",
+            ash: "#171719",
+            gold: "#d4af37",
+            sand: "#f4e6aa",
+            mist: "#b8b8bf"
+          },
+          boxShadow: {
+            soft: "0 20px 60px rgba(0,0,0,0.35)",
+            gold: "0 10px 30px rgba(212,175,55,0.18)"
+          },
+          fontFamily: {
+            display: ["Avenir Next", "Montserrat", "Segoe UI", "sans-serif"],
+            serifish: ["Iowan Old Style", "Palatino Linotype", "Book Antiqua", "serif"]
+          },
+          letterSpacing: {
+            hero: "0.24em"
+          },
+          animation: {
+            float: "float 7s ease-in-out infinite",
+            pulseSoft: "pulseSoft 3s ease-in-out infinite"
+          },
+          keyframes: {
+            float: {
+              "0%, 100%": { transform: "translateY(0px)" },
+              "50%": { transform: "translateY(-12px)" }
+            },
+            pulseSoft: {
+              "0%, 100%": { opacity: "0.45" },
+              "50%": { opacity: "0.7" }
+            }
+          }
+        }
       }
-
-      .tagline {
-        font-size: 18px;
-      }
-
-      .logo {
-        width: 120px;
-      }
-
-      .box {
-        padding: 20px;
-      }
-    }
-  </style>
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div class="container">
-    <img src="logo.png" class="logo" alt="Mega Dump Logo" />
-
-    <h1>MEGA DUMP</h1>
-
-    <p class="tagline">
-      We know we’re shit. You know you’re shit. Let’s be shit together.
-    </p>
-
-    <div class="cta">JOIN THE DUMP</div>
-
-    <div class="box">
-      <h2>About</h2>
-      <p>
-        Mega Dump (MDUMP) is a self-aware meme coin built on the Ethereum network.
-        It reflects the reality of crypto — volatile, unpredictable, and often driven by attention rather than fundamentals.
-      </p>
-      <p>
-        MDUMP has a fixed supply of 100,000,000 tokens and is freely tradable on decentralised exchanges.
-        There is no roadmap, no promises, and no guarantees — just a transparent token anyone can buy, sell, or hold.
-      </p>
-      <p>
-        It exists because people pay attention, people trade, and sometimes that alone is enough to move markets.
-      </p>
-    </div>
-
-    <div class="box">
-      <h2>Token Details</h2>
-      <p><strong>Name:</strong> Mega Dump</p>
-      <p><strong>Symbol:</strong> MDUMP</p>
-      <p><strong>Supply:</strong> 100,000,000</p>
-      <p><strong>Network:</strong> Ethereum</p>
-      <p class="contract">
-        <strong>Contract:</strong> 0x37d8f7b966F2a869455A90c9401ac65Aef44Db59
-      </p>
-    </div>
-
-    <div class="box">
-      <h2>How to Buy</h2>
-      <ol class="steps">
-        <li>Get ETH in a wallet (e.g. MetaMask).</li>
-        <li>Go to Uniswap.</li>
-        <li>Paste the MDUMP contract address.</li>
-        <li>Select MDUMP and confirm the swap.</li>
-      </ol>
-    </div>
-
-    <div class="box">
-      <h2>Contact</h2>
-      <p>Email: contact.megadump@gmail.com</p>
-    </div>
-
-    <p class="footer-note">
-      Mega Dump is a meme coin. Nothing on this site is financial advice.
-    </p>
+<body class="bg-coal text-white antialiased selection:bg-gold/30 selection:text-white">
+  <div class="fixed inset-0 -z-10 overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(212,175,55,0.12),_transparent_32%),radial-gradient(circle_at_80%_20%,_rgba(212,175,55,0.08),_transparent_24%),linear-gradient(180deg,_#121212_0%,_#050505_55%,_#020202_100%)]"></div>
+    <div class="absolute left-1/2 top-0 h-[32rem] w-[32rem] -translate-x-1/2 rounded-full bg-gold/10 blur-3xl animate-pulseSoft"></div>
+    <div class="absolute inset-0 opacity-[0.07]" style="background-image: linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px); background-size: 56px 56px;"></div>
   </div>
+
+  <header class="sticky top-0 z-40 border-b border-white/8 bg-coal/70 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
+      <a href="#top" class="flex items-center gap-3">
+        <img src="logo.png" alt="Mega Dump logo" class="h-11 w-11 rounded-full border border-gold/30 bg-white/5 object-cover p-1 shadow-gold">
+        <div>
+          <p class="font-display text-xs uppercase tracking-[0.32em] text-gold">MDUMP</p>
+          <p class="font-serifish text-sm text-white/70">Ethereum meme coin</p>
+        </div>
+      </a>
+      <nav class="hidden items-center gap-6 text-sm text-white/75 md:flex">
+        <a href="#about" class="transition hover:text-white">About</a>
+        <a href="#token" class="transition hover:text-white">Token</a>
+        <a href="#how-to-buy" class="transition hover:text-white">How to Buy</a>
+        <a href="#faq" class="transition hover:text-white">FAQ</a>
+      </nav>
+      <a href="#how-to-buy" class="inline-flex items-center rounded-full border border-gold/40 px-4 py-2 text-sm font-medium text-gold transition hover:border-gold hover:bg-gold hover:text-coal">Buy</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="relative mx-auto max-w-7xl px-6 pb-16 pt-16 lg:px-10 lg:pb-24 lg:pt-24">
+      <div class="grid items-center gap-12 lg:grid-cols-[1.2fr_0.8fr]">
+        <div class="reveal">
+          <p class="mb-5 font-display text-xs uppercase tracking-hero text-gold/90">Ethereum • Meme Coin • Self Aware</p>
+          <h1 class="max-w-4xl font-display text-5xl font-semibold uppercase leading-[0.92] tracking-tight text-white sm:text-6xl lg:text-8xl">
+            Mega Dump
+          </h1>
+          <p class="mt-6 max-w-2xl font-serifish text-xl leading-relaxed text-white/80 sm:text-2xl">
+            We know we’re shit. You know you’re shit. Let’s be shit together.
+          </p>
+          <p class="mt-6 max-w-2xl text-base leading-8 text-mist sm:text-lg">
+            Mega Dump is a polished joke with real contract details, real tradeability, and zero fake sophistication. It is a meme coin for people who already understand the theater and still want a seat in the front row.
+          </p>
+          <div class="mt-9 flex flex-col gap-4 sm:flex-row">
+            <a id="joinDumpButton" href="#how-to-buy" class="inline-flex items-center justify-center rounded-full bg-gold px-7 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-coal shadow-gold transition hover:-translate-y-0.5 hover:bg-sand">
+              Join the Dump
+            </a>
+            <button type="button" data-copy-contract class="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-7 py-4 text-sm font-semibold uppercase tracking-[0.18em] text-white transition hover:-translate-y-0.5 hover:border-gold/40 hover:bg-white/10">
+              Copy Contract
+            </button>
+          </div>
+          <div class="mt-8 flex flex-wrap items-center gap-4 text-sm text-white/65">
+            <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2">Contract verified visibility</span>
+            <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2">No fake roadmap sermon</span>
+            <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2">Built for GitHub Pages</span>
+          </div>
+        </div>
+
+        <div class="reveal relative">
+          <div class="absolute -inset-6 rounded-[2rem] border border-gold/10 bg-gold/5 blur-2xl"></div>
+          <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-soft backdrop-blur-xl sm:p-8">
+            <div class="absolute right-5 top-5 rounded-full border border-gold/25 bg-gold/10 px-3 py-1 text-[10px] uppercase tracking-[0.25em] text-gold">
+              Premium Filth
+            </div>
+            <img src="logo.png" alt="Mega Dump coin logo" class="mx-auto mt-6 h-40 w-40 rounded-full border border-gold/25 bg-black/20 p-4 shadow-gold sm:h-52 sm:w-52 animate-float">
+            <div class="mt-8 rounded-[1.5rem] border border-white/10 bg-black/30 p-5">
+              <p class="text-xs uppercase tracking-[0.3em] text-gold/80">Contract</p>
+              <p class="mt-3 break-all font-mono text-sm leading-7 text-white/90" data-contract-text>
+                0x37d8f7b966F2a869455A90c9401ac65Aef44Db59
+              </p>
+              <button type="button" data-copy-contract class="mt-4 inline-flex items-center rounded-full border border-gold/35 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-gold transition hover:bg-gold hover:text-coal">
+                Copy Contract
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-24">
+      <div class="reveal grid gap-10 rounded-[2rem] border border-white/10 bg-white/[0.03] p-8 shadow-soft backdrop-blur sm:p-10 lg:grid-cols-[0.8fr_1.2fr]">
+        <div>
+          <p class="text-xs uppercase tracking-[0.32em] text-gold">About Mega Dump</p>
+          <h2 class="mt-4 font-display text-3xl uppercase leading-tight text-white sm:text-4xl">Absurd by design. Not by accident.</h2>
+        </div>
+        <div class="space-y-6 text-base leading-8 text-mist sm:text-lg">
+          <p>
+            Mega Dump is a self-aware meme coin on Ethereum built for people who are tired of projects pretending to be more profound than they are. The joke is obvious. The execution is not.
+          </p>
+          <p>
+            MDUMP leans into the chaos without dressing it up as destiny. No fake revolution. No messiah complex. Just a sharp brand, a tradeable token, and a community that understands the punchline before the market does.
+          </p>
+          <p>
+            If most meme coins are screaming for attention, Mega Dump walks in well dressed, says something uncomfortably honest, and lets everyone else overexplain themselves.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="token" class="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-24">
+      <div class="reveal mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <p class="text-xs uppercase tracking-[0.32em] text-gold">Token Details</p>
+          <h2 class="mt-4 font-display text-3xl uppercase leading-tight sm:text-4xl">The part people actually need</h2>
+        </div>
+        <button type="button" data-copy-contract class="inline-flex items-center justify-center rounded-full border border-gold/35 bg-gold/10 px-5 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-gold transition hover:bg-gold hover:text-coal">
+          Copy Contract
+        </button>
+      </div>
+
+      <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+        <article class="reveal rounded-[1.6rem] border border-white/10 bg-white/[0.04] p-6 shadow-soft">
+          <p class="text-xs uppercase tracking-[0.3em] text-gold/80">Name</p>
+          <p class="mt-4 font-display text-2xl text-white">Mega Dump</p>
+        </article>
+        <article class="reveal rounded-[1.6rem] border border-white/10 bg-white/[0.04] p-6 shadow-soft">
+          <p class="text-xs uppercase tracking-[0.3em] text-gold/80">Symbol</p>
+          <p class="mt-4 font-display text-2xl text-white">MDUMP</p>
+        </article>
+        <article class="reveal rounded-[1.6rem] border border-white/10 bg-white/[0.04] p-6 shadow-soft">
+          <p class="text-xs uppercase tracking-[0.3em] text-gold/80">Network</p>
+          <p class="mt-4 font-display text-2xl text-white">Ethereum</p>
+        </article>
+        <article class="reveal rounded-[1.6rem] border border-white/10 bg-white/[0.04] p-6 shadow-soft">
+          <p class="text-xs uppercase tracking-[0.3em] text-gold/80">Status</p>
+          <p class="mt-4 font-display text-2xl text-white">Launch Ready</p>
+        </article>
+      </div>
+
+      <div class="reveal mt-5 rounded-[1.8rem] border border-gold/20 bg-[linear-gradient(180deg,rgba(212,175,55,0.08),rgba(255,255,255,0.03))] p-6 shadow-gold sm:p-8">
+        <div class="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
+          <div>
+            <p class="text-xs uppercase tracking-[0.3em] text-gold">Verified Contract Address</p>
+            <p class="mt-4 break-all font-mono text-base leading-8 text-white sm:text-lg" data-contract-text>
+              0x37d8f7b966F2a869455A90c9401ac65Aef44Db59
+            </p>
+          </div>
+          <button type="button" data-copy-contract class="inline-flex items-center justify-center rounded-full bg-gold px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-coal transition hover:-translate-y-0.5 hover:bg-sand">
+            Copy Contract
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-to-buy" class="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-24">
+      <div class="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+        <div class="reveal">
+          <p class="text-xs uppercase tracking-[0.32em] text-gold">How to Buy</p>
+          <h2 class="mt-4 font-display text-3xl uppercase leading-tight sm:text-4xl">Four clean steps into the dump</h2>
+          <p class="mt-5 max-w-xl text-base leading-8 text-mist sm:text-lg">
+            Buying MDUMP should feel simple, not ritualistic. Bring ETH, use a real wallet, paste the contract, and avoid pretending this is harder than it is.
+          </p>
+          <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+            <!-- Replace the href below with your live Uniswap trading link -->
+            <a id="uniswapLink" href="https://app.uniswap.org/" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center rounded-full bg-gold px-7 py-4 text-sm font-semibold uppercase tracking-[0.2em] text-coal transition hover:-translate-y-0.5 hover:bg-sand">
+              Buy on Uniswap
+            </a>
+            <button type="button" data-copy-contract class="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-7 py-4 text-sm font-semibold uppercase tracking-[0.18em] text-white transition hover:border-gold/40 hover:bg-white/10">
+              Copy Contract
+            </button>
+          </div>
+        </div>
+
+        <div class="grid gap-4">
+          <article class="reveal rounded-[1.6rem] border border-white/10 bg-white/[0.04] p-6 shadow-soft">
+            <p class="text-sm font-semibold uppercase tracking-[0.28em] text-gold">01</p>
+            <h3 class="mt-4 font-display text-2xl text-white">Load up on ETH</h3>
+            <p class="mt-3 text-sm leading-7 text-mist sm:text-base">Use a wallet such as MetaMask and make sure you have enough ETH for the swap and gas. Ethereum still charges rent.</p>
+          </article>
+          <article class="reveal rounded-[1.6rem] border border-white/10 bg-white/[0.04] p-6 shadow-soft">
+            <p class="text-sm font-semibold uppercase tracking-[0.28em] text-gold">02</p>
+            <h3 class="mt-4 font-display text-2xl text-white">Open Uniswap</h3>
+            <p class="mt-3 text-sm leading-7 text-mist sm:text-base">Use the button on this site or go directly to Uniswap, then connect your wallet like a functional adult.</p>
+          </article>
+          <article class="reveal rounded-[1.6rem] border border-white/10 bg-white/[0.04] p-6 shadow-soft">
+            <p class="text-sm font-semibold uppercase tracking-[0.28em] text-gold">03</p>
+            <h3 class="mt-4 font-display text-2xl text-white">Paste the contract</h3>
+            <p class="mt-3 text-sm leading-7 text-mist sm:text-base">Use the MDUMP contract address exactly as shown here so you are swapping for the right token, not an impression of one.</p>
+          </article>
+          <article class="reveal rounded-[1.6rem] border border-white/10 bg-white/[0.04] p-6 shadow-soft">
+            <p class="text-sm font-semibold uppercase tracking-[0.28em] text-gold">04</p>
+            <h3 class="mt-4 font-display text-2xl text-white">Swap ETH for MDUMP</h3>
+            <p class="mt-3 text-sm leading-7 text-mist sm:text-base">Review the details, confirm the trade, and welcome yourself to the polished bottom of the market.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-24">
+      <div class="reveal mb-10 max-w-3xl">
+        <p class="text-xs uppercase tracking-[0.32em] text-gold">Why Mega Dump</p>
+        <h2 class="mt-4 font-display text-3xl uppercase leading-tight sm:text-4xl">A cleaner narrative for a dirty name</h2>
+        <p class="mt-5 text-base leading-8 text-mist sm:text-lg">
+          Mega Dump is built for people who know exactly what they are looking at. It is self-aware, honest about the absurdity, and still structured like something worth sharing.
+        </p>
+      </div>
+      <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+        <article class="reveal rounded-[1.6rem] border border-white/10 bg-white/[0.04] p-6 shadow-soft">
+          <h3 class="font-display text-2xl text-white">Self-aware</h3>
+          <p class="mt-3 text-sm leading-7 text-mist sm:text-base">No fake mythology, no forced grand destiny. The brand understands the joke and stays in control of it.</p>
+        </article>
+        <article class="reveal rounded-[1.6rem] border border-white/10 bg-white/[0.04] p-6 shadow-soft">
+          <h3 class="font-display text-2xl text-white">Honest</h3>
+          <p class="mt-3 text-sm leading-7 text-mist sm:text-base">Crypto is part casino, part culture, part performance. Mega Dump says the quiet part with excellent lighting.</p>
+        </article>
+        <article class="reveal rounded-[1.6rem] border border-white/10 bg-white/[0.04] p-6 shadow-soft">
+          <h3 class="font-display text-2xl text-white">Absurd</h3>
+          <p class="mt-3 text-sm leading-7 text-mist sm:text-base">The name is ridiculous on purpose. The presentation is not. That tension is the whole point.</p>
+        </article>
+        <article class="reveal rounded-[1.6rem] border border-white/10 bg-white/[0.04] p-6 shadow-soft">
+          <h3 class="font-display text-2xl text-white">Tradeable</h3>
+          <p class="mt-3 text-sm leading-7 text-mist sm:text-base">It lives on Ethereum, has a visible contract, and is framed for people who already know how to move when they want in.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="stats" class="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-24">
+      <div class="reveal mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <p class="text-xs uppercase tracking-[0.32em] text-gold">Live Stats</p>
+          <h2 class="mt-4 font-display text-3xl uppercase leading-tight sm:text-4xl">Structured for real data later</h2>
+        </div>
+        <p class="max-w-xl text-sm leading-7 text-white/60">These values are placeholders for now. You can update them manually in the HTML or wire them to an API later without redesigning the section.</p>
+      </div>
+      <div class="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+        <article class="reveal rounded-[1.8rem] border border-white/10 bg-white/[0.04] p-6 shadow-soft">
+          <p class="text-xs uppercase tracking-[0.3em] text-gold/80">Price</p>
+          <p class="mt-4 font-display text-3xl text-white" data-stat="price">$0.000042</p>
+          <p class="mt-3 text-sm text-white/55">Placeholder value</p>
+        </article>
+        <article class="reveal rounded-[1.8rem] border border-white/10 bg-white/[0.04] p-6 shadow-soft">
+          <p class="text-xs uppercase tracking-[0.3em] text-gold/80">Liquidity</p>
+          <p class="mt-4 font-display text-3xl text-white" data-stat="liquidity">$187K</p>
+          <p class="mt-3 text-sm text-white/55">Placeholder value</p>
+        </article>
+        <article class="reveal rounded-[1.8rem] border border-white/10 bg-white/[0.04] p-6 shadow-soft">
+          <p class="text-xs uppercase tracking-[0.3em] text-gold/80">Holders</p>
+          <p class="mt-4 font-display text-3xl text-white" data-stat="holders">1,248</p>
+          <p class="mt-3 text-sm text-white/55">Placeholder value</p>
+        </article>
+        <article class="reveal rounded-[1.8rem] border border-white/10 bg-white/[0.04] p-6 shadow-soft">
+          <p class="text-xs uppercase tracking-[0.3em] text-gold/80">Market Cap</p>
+          <p class="mt-4 font-display text-3xl text-white" data-stat="marketCap">$4.2M</p>
+          <p class="mt-3 text-sm text-white/55">Placeholder value</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="faq" class="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-24">
+      <div class="reveal mb-10 max-w-3xl">
+        <p class="text-xs uppercase tracking-[0.32em] text-gold">FAQ</p>
+        <h2 class="mt-4 font-display text-3xl uppercase leading-tight sm:text-4xl">A few honest answers</h2>
+      </div>
+      <div class="grid gap-4">
+        <details class="reveal group rounded-[1.5rem] border border-white/10 bg-white/[0.04] p-6 shadow-soft">
+          <summary class="cursor-pointer list-none font-display text-xl text-white marker:hidden">What is Mega Dump?</summary>
+          <p class="mt-4 max-w-3xl text-sm leading-7 text-mist sm:text-base">Mega Dump is a self-aware meme coin on Ethereum. It is intentionally funny, intentionally polished, and intentionally honest about what kind of asset it is.</p>
+        </details>
+        <details class="reveal group rounded-[1.5rem] border border-white/10 bg-white/[0.04] p-6 shadow-soft">
+          <summary class="cursor-pointer list-none font-display text-xl text-white marker:hidden">Is this financial advice?</summary>
+          <p class="mt-4 max-w-3xl text-sm leading-7 text-mist sm:text-base">No. This is a meme coin website, not a licensed advisory desk. Do your own research, use your own judgment, and never trade money you cannot afford to lose.</p>
+        </details>
+        <details class="reveal group rounded-[1.5rem] border border-white/10 bg-white/[0.04] p-6 shadow-soft">
+          <summary class="cursor-pointer list-none font-display text-xl text-white marker:hidden">Where can I buy MDUMP?</summary>
+          <p class="mt-4 max-w-3xl text-sm leading-7 text-mist sm:text-base">MDUMP is intended to be bought on Uniswap using ETH on Ethereum. Use the contract address on this site to make sure you are selecting the correct token.</p>
+        </details>
+        <details class="reveal group rounded-[1.5rem] border border-white/10 bg-white/[0.04] p-6 shadow-soft">
+          <summary class="cursor-pointer list-none font-display text-xl text-white marker:hidden">Why is the name Mega Dump?</summary>
+          <p class="mt-4 max-w-3xl text-sm leading-7 text-mist sm:text-base">Because pretending this market is always noble is exhausting. Mega Dump says the uncomfortable part out loud and turns it into the identity.</p>
+        </details>
+        <details class="reveal group rounded-[1.5rem] border border-white/10 bg-white/[0.04] p-6 shadow-soft">
+          <summary class="cursor-pointer list-none font-display text-xl text-white marker:hidden">Is the token live on Ethereum?</summary>
+          <p class="mt-4 max-w-3xl text-sm leading-7 text-mist sm:text-base">Yes. The network for MDUMP is Ethereum, and the contract address displayed on this site is the one visitors should verify before buying or sharing.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 bg-black/30">
+    <div class="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+      <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+        <div class="reveal">
+          <p class="font-display text-xs uppercase tracking-[0.32em] text-gold">Mega Dump</p>
+          <p class="mt-4 max-w-2xl font-serifish text-xl text-white/85">A premium-looking meme coin for people who appreciate sharp execution and low delusion.</p>
+          <div class="mt-6 space-y-3 text-sm leading-7 text-white/70">
+            <p>Contract: <span class="break-all font-mono text-white/90" data-contract-text>0x37d8f7b966F2a869455A90c9401ac65Aef44Db59</span></p>
+            <p>Email: <a href="mailto:contact.megadump@gmail.com" class="text-gold transition hover:text-sand">contact.megadump@gmail.com</a></p>
+            <p class="max-w-2xl text-white/50">MDUMP is a meme coin. Nothing on this site is financial advice, legal advice, or a promise of anything except a very clear brand position.</p>
+          </div>
+        </div>
+        <div class="reveal lg:justify-self-end">
+          <p class="text-xs uppercase tracking-[0.3em] text-gold/80">Links</p>
+          <div class="mt-5 grid gap-3 sm:grid-cols-2">
+            <!-- Replace these placeholder href values with your live social and analytics links -->
+            <a href="https://x.com/" target="_blank" rel="noreferrer" class="rounded-2xl border border-white/10 bg-white/[0.04] px-5 py-4 text-sm text-white/75 transition hover:border-gold/30 hover:text-white">X / Twitter</a>
+            <a href="https://t.me/" target="_blank" rel="noreferrer" class="rounded-2xl border border-white/10 bg-white/[0.04] px-5 py-4 text-sm text-white/75 transition hover:border-gold/30 hover:text-white">Telegram</a>
+            <a id="dexscreenerLink" href="#" class="rounded-2xl border border-white/10 bg-white/[0.04] px-5 py-4 text-sm text-white/75 transition hover:border-gold/30 hover:text-white">Dexscreener</a>
+            <a id="dextoolsLink" href="#" class="rounded-2xl border border-white/10 bg-white/[0.04] px-5 py-4 text-sm text-white/75 transition hover:border-gold/30 hover:text-white">Dextools</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="copyToast" class="pointer-events-none fixed bottom-5 left-1/2 z-50 -translate-x-1/2 translate-y-6 rounded-full border border-gold/30 bg-black/85 px-5 py-3 text-sm font-medium text-gold opacity-0 shadow-gold transition duration-300">
+    Contract copied.
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
