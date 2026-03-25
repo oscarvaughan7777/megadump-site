@@ -1,9 +1,16 @@
 const siteConfig = {
   contractAddress: "0x37d8f7b966F2a869455A90c9401ac65Aef44Db59",
-  uniswapUrl: "https://app.uniswap.org/",
   email: "contact.megadump@gmail.com",
+  // Paste your live Uniswap buy link below.
+  uniswapUrl: "https://app.uniswap.org/",
   socialLinks: {
+    // Paste your X profile link below.
+    x: "#",
+    // Paste your Telegram link below.
+    telegram: "#",
+    // Paste your Dexscreener link below.
     dexscreener: "#",
+    // Paste your Dextools link below.
     dextools: "#"
   },
   stats: {
@@ -16,13 +23,15 @@ const siteConfig = {
 
 const contractTargets = document.querySelectorAll("[data-contract-text]");
 const copyButtons = document.querySelectorAll("[data-copy-contract]");
-const toast = document.getElementById("copyToast");
-const joinDumpButton = document.getElementById("joinDumpButton");
-const uniswapLink = document.getElementById("uniswapLink");
+const buyHeroLink = document.getElementById("buyHeroLink");
+const buySectionLink = document.getElementById("buySectionLink");
+const xLink = document.getElementById("xLink");
+const telegramLink = document.getElementById("telegramLink");
 const dexscreenerLink = document.getElementById("dexscreenerLink");
 const dextoolsLink = document.getElementById("dextoolsLink");
 const statTargets = document.querySelectorAll("[data-stat]");
 const revealTargets = document.querySelectorAll(".reveal");
+const toast = document.getElementById("copyToast");
 
 let toastTimer;
 
@@ -30,36 +39,30 @@ contractTargets.forEach((node) => {
   node.textContent = siteConfig.contractAddress;
 });
 
-if (joinDumpButton) {
-  joinDumpButton.href = siteConfig.uniswapUrl;
-  joinDumpButton.target = "_blank";
-  joinDumpButton.rel = "noreferrer";
-}
-
-if (uniswapLink) {
-  uniswapLink.href = siteConfig.uniswapUrl;
-}
-
-if (dexscreenerLink) {
-  dexscreenerLink.href = siteConfig.socialLinks.dexscreener;
-  if (siteConfig.socialLinks.dexscreener === "#") {
-    dexscreenerLink.setAttribute("aria-disabled", "true");
-  }
-}
-
-if (dextoolsLink) {
-  dextoolsLink.href = siteConfig.socialLinks.dextools;
-  if (siteConfig.socialLinks.dextools === "#") {
-    dextoolsLink.setAttribute("aria-disabled", "true");
-  }
-}
-
 statTargets.forEach((node) => {
   const key = node.dataset.stat;
   if (key && siteConfig.stats[key]) {
     node.textContent = siteConfig.stats[key];
   }
 });
+
+function setExternalLink(element, href) {
+  if (!element) return;
+  element.href = href;
+  if (href && href !== "#") {
+    element.target = "_blank";
+    element.rel = "noreferrer";
+  } else {
+    element.setAttribute("aria-disabled", "true");
+  }
+}
+
+setExternalLink(buyHeroLink, siteConfig.uniswapUrl);
+setExternalLink(buySectionLink, siteConfig.uniswapUrl);
+setExternalLink(xLink, siteConfig.socialLinks.x);
+setExternalLink(telegramLink, siteConfig.socialLinks.telegram);
+setExternalLink(dexscreenerLink, siteConfig.socialLinks.dexscreener);
+setExternalLink(dextoolsLink, siteConfig.socialLinks.dextools);
 
 function showToast(message) {
   if (!toast) return;
@@ -78,7 +81,7 @@ async function copyContract() {
     await navigator.clipboard.writeText(siteConfig.contractAddress);
     showToast("Contract copied to clipboard.");
   } catch (error) {
-    showToast("Copy failed. Contract is highlighted on screen.");
+    showToast("Copy failed. Please copy the address manually.");
     console.error(error);
   }
 }
@@ -88,21 +91,19 @@ copyButtons.forEach((button) => {
 });
 
 revealTargets.forEach((target) => {
-  target.classList.add("translate-y-6", "opacity-0", "transition", "duration-700");
+  target.classList.add("translate-y-4", "opacity-0", "transition", "duration-700");
 });
 
 const revealObserver = new IntersectionObserver(
   (entries, observer) => {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) return;
-      entry.target.classList.remove("translate-y-6", "opacity-0");
+      entry.target.classList.remove("translate-y-4", "opacity-0");
       entry.target.classList.add("translate-y-0", "opacity-100");
       observer.unobserve(entry.target);
     });
   },
-  {
-    threshold: 0.16
-  }
+  { threshold: 0.14 }
 );
 
 revealTargets.forEach((target) => {
