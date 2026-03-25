@@ -1,89 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mega Dump (MDUMP)</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #0f0f0f;
-      color: #fff;
+      color: #ffffff;
       text-align: center;
     }
+
     .container {
-      max-width: 800px;
-      margin: auto;
-      padding: 40px 20px;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 20px 64px;
     }
-    h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
+
     .logo {
-      width: 120px;
+      width: 140px;
+      height: auto;
       margin-bottom: 20px;
     }
-    .box {
-      margin: 30px 0;
-      padding: 20px;
-      background: #1a1a1a;
-      border-radius: 10px;
+
+    h1 {
+      margin: 0;
+      font-size: 52px;
+      letter-spacing: 2px;
     }
+
+    .tagline {
+      margin: 18px auto 0;
+      max-width: 620px;
+      font-size: 20px;
+      line-height: 1.5;
+      color: #f4f4f4;
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 12px 26px;
+      background: #f5c542;
+      color: #111111;
+      border-radius: 8px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .box {
+      margin: 32px 0;
+      padding: 24px;
+      background: #1a1a1a;
+      border: 1px solid #252525;
+      border-radius: 12px;
+      text-align: left;
+    }
+
+    .box h2 {
+      margin-top: 0;
+      margin-bottom: 14px;
+      font-size: 24px;
+      color: #f5c542;
+    }
+
+    .box p {
+      margin: 10px 0;
+      line-height: 1.6;
+      color: #e8e8e8;
+    }
+
     .contract {
       word-break: break-all;
       font-size: 14px;
-      color: #ccc;
+      color: #cccccc;
+    }
+
+    .steps {
+      padding-left: 20px;
+      margin: 12px 0 0;
+      color: #e8e8e8;
+    }
+
+    .steps li {
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+
+    .footer-note {
+      margin-top: 28px;
+      font-size: 13px;
+      color: #8f8f8f;
+    }
+
+    a {
+      color: #f5c542;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      h1 {
+        font-size: 40px;
+      }
+
+      .tagline {
+        font-size: 18px;
+      }
+
+      .logo {
+        width: 120px;
+      }
+
+      .box {
+        padding: 20px;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <img src="logo.png" class="logo" alt="Mega Dump Logo" />
 
-<div class="container">
+    <h1>MEGA DUMP</h1>
 
-  <img src="logo.png" class="logo" alt="Mega Dump Logo">
+    <p class="tagline">
+      We know we’re shit. You know you’re shit. Let’s be shit together.
+    </p>
 
-  <h1>MEGA DUMP</h1>
-  <p>The most honest shitcoin on Ethereum.</p>
+    <div class="cta">Join the Dump</div>
 
-  <div class="box">
-    <h2>About</h2>
-    <p>
-      Mega Dump (MDUMP) is a self-aware meme coin.  
-      It doesn’t promise anything.  
-      It doesn’t pretend to be useful.  
-      And yet… it might still go up.
+    <div class="box">
+      <h2>About</h2>
+      <p>
+        Mega Dump (MDUMP) is a self-aware meme coin built on Ethereum.
+      </p>
+      <p>
+        It does not pretend to be revolutionary. It does not pretend to fix crypto.
+        It exists because the space is absurd, and sometimes the most honest coins
+        get the most attention.
+      </p>
+    </div>
+
+    <div class="box">
+      <h2>Token Details</h2>
+      <p><strong>Name:</strong> Mega Dump</p>
+      <p><strong>Symbol:</strong> MDUMP</p>
+      <p><strong>Supply:</strong> 100,000,000</p>
+      <p><strong>Network:</strong> Ethereum</p>
+      <p class="contract">
+        <strong>Contract:</strong> 0x37d8f7b966F2a869455A90c9401ac65Aef44Db59
+      </p>
+    </div>
+
+    <div class="box">
+      <h2>How to Buy</h2>
+      <ol class="steps">
+        <li>Get ETH in your wallet.</li>
+        <li>Open Uniswap.</li>
+        <li>Paste the MDUMP contract address.</li>
+        <li>Swap ETH for MDUMP.</li>
+      </ol>
+    </div>
+
+    <div class="box">
+      <h2>Contact</h2>
+      <p>Email: hello@megadump.xyz</p>
+    </div>
+
+    <p class="footer-note">
+      Mega Dump is a meme coin. Nothing on this site is financial advice.
     </p>
   </div>
-
-  <div class="box">
-    <h2>Token Details</h2>
-    <p>Name: Mega Dump</p>
-    <p>Symbol: MDUMP</p>
-    <p>Supply: 100,000,000</p>
-    <p>Network: Ethereum</p>
-    <p class="contract">
-      Contract: PASTE_YOUR_CONTRACT_ADDRESS_HERE
-    </p>
-  </div>
-
-  <div class="box">
-    <h2>How to Buy</h2>
-    <p>
-      1. Get ETH<br>
-      2. Open Uniswap<br>
-      3. Paste contract address<br>
-      4. Swap ETH for MDUMP
-    </p>
-  </div>
-
-  <div class="box">
-    <h2>Contact</h2>
-    <p>Email: hello@megadump.xyz</p>
-  </div>
-
-</div>
-
 </body>
 </html>
